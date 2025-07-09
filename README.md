@@ -45,24 +45,16 @@ The dataset has following features.
 
   ### 1. Data Preprocessing & Feature Engineering:
   
-    - Convert date-like features to appropriate format
-    
-    - Handle missing values using KNN Imputation
-    
-    - Aggregate data to remove duplicate driver records
-    
-    - Create new features:
-    
-          - Quarterly Rating Change Flag: 1 if increased
-        
-          - Monthly Income Change Flag: 1 if increased
-        
-          - Attrition Flag: 1 if driver has left
-        
-    - One-hot encoding of categorical variables
-    
-    - Standardization of numerical features
-  
+  - Convert date-like features to appropriate format
+  - Handle missing values using KNN Imputation
+  - Aggregate data to remove duplicate driver records
+  - Create new features:
+      - Quarterly Rating Change Flag: 1 if increased
+      - Monthly Income Change Flag: 1 if increased
+      - Attrition Flag: 1 if driver has left
+  - One-hot encoding of categorical variables
+  - Standardization of numerical features
+
   ### 2. Model Building:
   
     - Handling Class Imbalance using oversampling/undersampling techniques
