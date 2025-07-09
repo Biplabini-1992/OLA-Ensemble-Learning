@@ -53,11 +53,11 @@ The dataset has following features.
     
     - Create new features:
     
-        - Quarterly Rating Change Flag: 1 if increased
+          - Quarterly Rating Change Flag: 1 if increased
         
-        - Monthly Income Change Flag: 1 if increased
+          - Monthly Income Change Flag: 1 if increased
         
-        - Attrition Flag: 1 if driver has left
+          - Attrition Flag: 1 if driver has left
         
     - One-hot encoding of categorical variables
     
