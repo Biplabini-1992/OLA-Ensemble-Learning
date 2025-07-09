@@ -16,41 +16,71 @@ The objective of this analysis is to develop a predictive model to determine the
 The dataset has following features.
 
   - MMMM-YY : Reporting Date (Monthly)
+    
   - Driver_ID : Unique id for drivers
+    
   - Age : Age of the driver
+    
   - Gender : Gender of the driver – Male : 0, Female: 1
+    
   - City : City Code of the driver
+    
   - Education_Level : Education level – 0 for 10+ ,1 for 12+ ,2 for graduate
+    
   - Income : Monthly average Income of the driver
+    
   - Date Of Joining : Joining date for the driver
+    
   - LastWorkingDate : Last date of working for the driver
+    
   - Joining Designation : Designation of the driver at the time of joining
+    
   - Grade : Grade of the driver at the time of reporting
+    
   - Total Business Value : The total business value acquired by the driver in a month (negative business indicates cancellation/refund or car EMI adjustments)
+    
   - Quarterly Rating : Quarterly rating of the driver: 1,2,3,4,5 (higher is better)
-  - 
+    
 ## Key Steps:
 
   ### 1. Data Preprocessing & Feature Engineering:
+  
     - Convert date-like features to appropriate format
+    
     - Handle missing values using KNN Imputation
+    
     - Aggregate data to remove duplicate driver records
+    
     - Create new features:
+    
         - Quarterly Rating Change Flag: 1 if increased
+        
         - Monthly Income Change Flag: 1 if increased
+        
         - Attrition Flag: 1 if driver has left
+        
     - One-hot encoding of categorical variables
+    
     - Standardization of numerical features
   
   ### 2. Model Building:
+  
     - Handling Class Imbalance using oversampling/undersampling techniques
+    
     - Ensemble Learning: Implementing Bagging (Random Forest) and Boosting (XGBoost, LightGBM)
+    
     - Hyperparameter tuning for model optimization
   
   ### 3. Model Evaluation:
+  
     - Classification Report (Precision, Recall, F1-Score, Accuracy)
+    
     - ROC-AUC Curve
+    
   ### 4. Insights & Recommendations:
+  
     - Identify key factors influencing driver attrition
+    
     - Suggest strategies to improve driver retention and optimize hiring
+    
     - Data-driven approach to reducing acquisition costs
